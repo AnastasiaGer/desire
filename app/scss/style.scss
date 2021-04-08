@@ -5,3 +5,41 @@
 @import 'global';
 
 
+.header {
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+  }
+}
+
+.logo{
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.menu {
+  padding-left: 35px;
+  &__list{
+    display: flex;
+    justify-content: stretch;
+  }
+  &__list-item {
+    padding-left: 35px;
+    padding-right: 45px;
+  }
+  &__list-link{
+    @extend %title-font;
+    color: rgba(54, 56, 56, 0.9033);
+    line-height: 22;
+
+  }
+}
+
+.header__btn{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
