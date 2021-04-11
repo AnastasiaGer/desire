@@ -222,8 +222,11 @@
 
   box-shadow: -2px 3px 17px 0 #000;
 
-  &.rightside-menu--close 
-  
+  transition: all .3s;
+}
+
+.rightside-menu.rightside-menu--close { 
+ transform: translateX(1000%);
 }
 
 .rightside-menu__close{
