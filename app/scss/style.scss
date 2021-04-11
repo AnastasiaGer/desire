@@ -92,7 +92,8 @@
     margin-bottom: 22px;
     padding-left: 30px;
     position: relative;
-    &::before{
+
+    &::before {
       content: "";
       background-image: url('../images/mail.svg');
       width: 16px;
@@ -137,9 +138,6 @@
   }
 }
 
-.footer__social,
-.footer__menu {}
-
 .footer__social {
   width: 125px;
   margin-right: auto;
@@ -156,7 +154,8 @@
     line-height: 28px;
     color: #707070;
     position: relative;
-    &::before{
+
+    &::before {
       content: '';
       position: absolute;
       top: 3px;
@@ -164,24 +163,29 @@
       width: 16px;
       height: 16px;
     }
-    &--facebook::before{
-        background-image: url('../images/facebook.svg');
+
+    &--facebook::before {
+      background-image: url('../images/facebook.svg');
     }
-    &--instagram::before{
+
+    &--instagram::before {
       background-image: url('../images/instagram.svg');
       width: 14px;
       height: 14px;
       top: 4px;
     }
-    &--pinterest::before{
+
+    &--pinterest::before {
       background-image: url('../images/pinterest.svg');
     }
-    &--whatsapp::before{
+
+    &--whatsapp::before {
       background-image: url('../images/whatsapp.svg');
       height: 14px;
       width: 14px;
     }
-    &--youtube::before{
+
+    &--youtube::before {
       background-image: url('../images/youtube.svg');
       width: 18px;
       height: 12px;
@@ -194,8 +198,6 @@
   margin-right: 60px;
   width: 125px;
 
-  &-list {}
-
   &-item {
     margin-bottom: 15px;
   }
@@ -206,4 +208,57 @@
     line-height: 28px;
     color: #707070;
   }
+}
+
+.rightside-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 694px;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 40px;
+
+  box-shadow: -2px 3px 17px 0 #000;
+
+  &.rightside-menu--close 
+  
+}
+
+.rightside-menu__close{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
+
+.rightside-menu__content {
+  text-align: center;
+  max-width: 485px;
+  margin: 0 auto;
+
+}
+
+.rightside-menu__logo {
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.rightside-menu__title {
+  @extend %title-font;
+  font-size: 36px;
+  line-height: 51px;
+  text-align: center;
+  color: $black;
+}
+
+.rightside-menu__text {
+  margin-bottom: 75px;
+}
+
+.rightside-menu__images {
+  max-width: 485px;
 }
