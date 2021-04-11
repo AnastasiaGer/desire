@@ -219,14 +219,12 @@
   width: 100%;
   background-color: #fff;
   padding-top: 40px;
-
   box-shadow: -2px 3px 17px 0 #000;
-
-  transition: all .3s;
+  transition: all .6s;
 }
 
 .rightside-menu.rightside-menu--close { 
- transform: translateX(1000%);
+ transform: translateX(500%);
 }
 
 .rightside-menu__close{
