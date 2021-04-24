@@ -383,7 +383,8 @@
 
   &__item {
     position: relative;
-    &:hover{
+
+    &:hover {
       .collection__info {
         opacity: 1;
       }
@@ -419,7 +420,7 @@
     margin-bottom: 19px;
     position: relative;
 
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       width: 80%;
@@ -432,9 +433,44 @@
     }
   }
 
-  &__info-text{
+  &__info-text {
     font-size: 14px;
     font-weight: 600;
     color: #707070;
+  }
+}
+
+// decor
+
+.decor{
+  padding: 170px 0 155px;
+  background-image: url(../images/decor-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__title{
+    @extend %title-font;
+    max-width: 737px;
+    font-size: 60px;
+    line-height: 80px;
+    color: $black;
+    position: relative;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background: #6D7278;
+    }
+  }
+
+  &__text{
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 28px;
+    color: $default;
   }
 }
