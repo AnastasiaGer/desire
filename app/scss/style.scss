@@ -281,20 +281,21 @@
 
 // TOP
 .top {
-&__inner{
-  padding-bottom: 70px;
-  position: relative;
-  &::before{
-    content: '';
-    position: absolute;
-    background-image: url('../images/slider/main_slider.jpg');
-    width: 100%;
-    height: 722px;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  &__inner {
+    padding-bottom: 70px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/slider/main_slider.jpg');
+      width: 100%;
+      height: 722px;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
-}
 
   &__slider-item {
     display: flex !important;
@@ -302,14 +303,14 @@
     align-items: center;
   }
 
-  &__slider-img{
+  &__slider-img {
     margin-left: -15%;
     width: 703px;
     height: 815px;
     object-fit: cover;
   }
 
-  &__slider-info{
+  &__slider-info {
     max-width: 645px;
     margin-left: 25px;
   }
@@ -348,7 +349,7 @@
   padding: 45px 0 105px;
 
 
-  &__title{
+  &__title {
     color: $black;
     font-size: 36px;
     line-height: 51px;
@@ -356,7 +357,7 @@
     margin-bottom: 25px;
     position: relative;
 
-    &::after{
+    &::after {
       content: '';
       position: absolute;
       width: 250px;
@@ -365,18 +366,75 @@
       left: 0;
       right: 0;
       margin: 0 auto;
-      background:#6D7278;
+      background: #6D7278;
     }
   }
 
-  &__text{
+  &__text {
     max-width: 730px;
     margin: 0 auto 30px;
   }
 }
 
-.collection{
+.collection {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
+
+  &__item {
+    position: relative;
+    &:hover{
+      .collection__info {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__images {
+    min-height: 350px;
+    object-fit: cover;
+  }
+
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#fff, 0.7);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s;
+  }
+
+  &__info-title {
+    font-size: 20px;
+    line-height: 25px;
+    color: $black;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 80%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background: #6D7278;
+    }
+  }
+
+  &__info-text{
+    font-size: 14px;
+    font-weight: 600;
+    color: #707070;
+  }
 }
