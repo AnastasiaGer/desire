@@ -2,13 +2,13 @@
   "name": "gulp-start",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "gulp default"
   },
-  "author": "Vadym Prokopchuk",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@fancyapps/fancybox": "3.5.7",
