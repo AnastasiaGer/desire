@@ -1353,6 +1353,7 @@
     border-bottom: 1px solid #DFDFDF;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
   }
 
   &__link {
@@ -1391,5 +1392,95 @@
       right: 0;
       background-image: url('../images/blog-one/arrow-next.svg');
     }
+  }
+
+  &__comments-title {
+    font-size: 20px;
+    line-height: 31px;
+    color: $black;
+    @extend %title-font;
+    margin-bottom: 15px;
+  }
+
+  &__comments-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 40px;
+  }
+
+  &__comment-avatar {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 13px;
+  }
+
+  &__comment-name {
+    font-size: 16px;
+    line-height: 23px;
+    color: $black;
+    @extend %title-font;
+
+  }
+
+  &__comment-date {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #A1A1A1;
+  }
+
+  &__comment-text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+
+  &__comment-reply {
+    background-color: transparent;
+    margin-left: 5px;
+    padding: 0;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #707070;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__form-title {
+    margin-bottom: 25px;
+    color: $black;
+    @extend %title-font;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  &__form-area {
+    margin-bottom: 12px;
+  }
+
+  &__form-input {
+    margin-bottom: 20px;
+    width: 48%;
+  }
+
+  &__form-label {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #A1A1A1;
+
   }
 }
