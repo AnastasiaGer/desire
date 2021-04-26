@@ -22,6 +22,8 @@ $(function () {
     arrows: false,
   });
 
+
+
   var mixer = mixitup('.gallery__inner', {
     load: {
         filter: '.living'
