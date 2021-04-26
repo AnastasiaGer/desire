@@ -1207,75 +1207,109 @@
     cursor: pointer;
   }
 
-  &__arrowprev{
-left: 16px;
+  &__arrowprev {
+    left: 16px;
   }
 
-  &__arrownext{
-right: 16px;
+  &__arrownext {
+    right: 16px;
   }
 }
-  .recent__posts {
+
+.recent__posts {
+  margin-bottom: 40px;
+
+  &-title {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 15px;
+    color: $black;
+    @extend %title-font;
+  }
+
+  &-item {
+    margin-bottom: 11px;
+  }
+
+  &-item-title {
+    display: block;
+    color: inherit;
+  }
+
+  &-item-date,
+  &-item-author {
+    font-size: 14px;
+    line-height: 28px;
+    color: #A1A1A1;
+  }
+}
+
+.aside {
+  width: 350px;
+  margin-left: 30px;
+
+  &__search {
+    position: relative;
     margin-bottom: 40px;
+  }
 
-    &-title {
-      font-size: 16px;
-      line-height: 23px;
-      margin-bottom: 15px;
-      color: $black;
-      @extend %title-font;
-    }
+  &__search-input {
+    opacity: 0.7;
+    border: 1px solid rgba(#383636, .7);
+    border-radius: 20px;
+    padding: 6px 45px 6px 18px;
+    display: block;
+    width: 100%;
 
-    &-item {
-      margin-bottom: 11px;
-    }
-
-    &-item-title {
-      display: block;
-      color: inherit;
-    }
-
-    &-item-date,
-    &-item-author {
+    &::placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
       font-size: 14px;
       line-height: 28px;
       color: #A1A1A1;
     }
   }
 
-  .aside {
-    width: 350px;
-    margin-left: 30px;
-
-    &__search {
-      position: relative;
-      margin-bottom: 40px;
-    }
-
-    &__search-input {
-      opacity: 0.7;
-      border: 1px solid rgba(#383636, .7);
-      border-radius: 20px;
-      padding: 6px 45px 6px 18px;
-      display: block;
-      width: 100%;
-
-      &::placeholder {
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 28px;
-        color: #A1A1A1;
-      }
-    }
-
-    &__search-btn {
-      border: none;
-      background-color: transparent;
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      cursor: pointer;
-    }
+  &__search-btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
   }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    margin: 0 6px;
+  }
+
+  &__list-num{
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #707070;
+  }
+
+  &__list-num--active{
+    color: $black;
+  }
+
+  &__arrow {
+    margin: 0 6px;
+  }
+
+  &__arrow--disabled{
+    display: none;
+  }
+}
