@@ -970,7 +970,7 @@
     margin-bottom: 13px;
     width: 48%;
     outline: none;
-    
+
     &::placeholder {
       font-weight: 400;
       font-family: 'Open Sans', sans-serif;
@@ -989,6 +989,7 @@
     resize: none;
     margin-bottom: 20px;
     outline: none;
+
     &::placeholder {
       font-weight: 400;
       font-family: 'Open Sans', sans-serif;
@@ -996,5 +997,45 @@
       line-height: 28px;
       color: #A1A1A1;
     }
+  }
+}
+
+//contact-slider
+
+.contact-slider {
+padding-bottom: 102px;
+  &__link {
+    position: relative;
+    display: block;
+    margin-right: 5px;
+    &:hover .contact-slider__title {
+      opacity: 1;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 170px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(#fff, .6);
+    color: $black;
+    @extend %title-font;
+    line-height: 22px;
+    text-align: center;
+    padding: 0 6px;
+    opacity: 0;
+    transition: all .5s;
   }
 }
