@@ -22,7 +22,10 @@ $(function () {
     arrows: false,
   });
 
-
+  $('.article-slider__box').slick({
+    prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrowprev"><img src="images/arrow-left.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrownext"><img src="images/arrow-right.svg" alt=""></button>'
+  });
 
   var mixer = mixitup('.gallery__inner', {
     load: {
