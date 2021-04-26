@@ -1003,11 +1003,14 @@
 //contact-slider
 
 .contact-slider {
-padding-bottom: 102px;
+  padding-bottom: 102px;
+
   &__link {
     position: relative;
     display: block;
     margin-right: 5px;
+    margin-bottom: 20px;
+
     &:hover .contact-slider__title {
       opacity: 1;
     }
@@ -1020,7 +1023,7 @@ padding-bottom: 102px;
     object-fit: cover;
   }
 
-  &__title{
+  &__title {
     position: absolute;
     top: 0;
     right: 0;
@@ -1037,5 +1040,135 @@ padding-bottom: 102px;
     padding: 0 6px;
     opacity: 0;
     transition: all .5s;
+  }
+}
+
+//blog
+
+.blog {
+  padding: 60px 0 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__category {
+    margin-bottom: 36px;
+
+  }
+
+  &__category-title,
+  &__tags-title {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 15px;
+    color: $black;
+    @extend %title-font;
+  }
+
+  &__category-item {
+    margin-bottom: 12px;
+  }
+
+  &__category-link {
+    font-size: 16px;
+    line-height: 27px;
+    color: $default;
+  }
+
+  &__tags {
+    margin-bottom: 50px;
+  }
+
+  &__tags-link {
+    display: inline-block;
+
+    padding: 0 16px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #8F8D8D;
+
+    border: 1px solid rgba(#454647, .5);
+    border-radius: 14px;
+  }
+
+  &__social{
+    display: flex;
+  }
+
+  &__social-item{
+    margin-right: 20px;
+  }
+}
+
+.recent__posts {
+  margin-bottom: 40px;
+
+  &-title {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 15px;
+    color: $black;
+    @extend %title-font;
+  }
+
+  &-item {
+    margin-bottom: 11px;
+  }
+
+  &-item_title {
+    display: block;
+    color: inherit;
+  }
+
+  &-item-date,
+  &-item-author {
+    font-size: 14px;
+    line-height: 28px;
+    color: #A1A1A1;
+  }
+}
+
+.aside {
+  width: 350px;
+  margin-left: 30px;
+
+  &__search {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__search-input {
+    opacity: 0.7;
+    border: 1px solid rgba(#383636, .7);
+    border-radius: 20px;
+    padding: 6px 45px 6px 18px;
+    display: block;
+    width: 100%;
+
+    &::placeholder {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 28px;
+      color: #A1A1A1;
+    }
+  }
+
+  &__search-btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
   }
 }
