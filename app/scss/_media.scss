@@ -19,9 +19,13 @@
 @media (max-width: 540px) {
   .logo {
     order: -1;
+    position: relative;
+    z-index: 12;
   }
 
   .header {
+    padding-top: 42px;
+    
     &__inner{
       flex-wrap: wrap;
     }
@@ -32,6 +36,8 @@
       border: none;
       cursor: pointer;
       order: -1;
+      position: relative;
+      z-index: 12;
       span{
         background-color: #000;
         width: 37px;
@@ -44,12 +50,31 @@
   }
 
   .menu{
-    // padding-right: 0;
-    // width: 100%;
+    padding-right: 0;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 11;
+    text-align: center;
+    transform: translateY(-350px);
+    transition: all .5s;
+    
+    &--open {
+      transform: translateY(30px);
+    }
 
-    // &__list {
-    //   display: block;
-    //   background-color: #fff;
-    // }
+    &__list {
+      display: block;
+      
+    }
+
+    &__list-item{
+      padding-right: 0;
+    }
+
+    &__list-link{
+      display: block;
+      padding: 15px 0;
+    }
   }
 }

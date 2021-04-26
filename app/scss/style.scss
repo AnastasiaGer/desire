@@ -45,7 +45,7 @@
   &__list-link {
     @extend %title-font;
     color: rgba(54, 56, 56, 0.9033);
-    line-height: 22;
+    line-height: 22px;
   }
 
   &__list-link--active {

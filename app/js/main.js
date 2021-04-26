@@ -1,4 +1,9 @@
 $(function () {
+  $('.header__btn-menu').on('click', function () {
+    $('.menu').toggleClass('menu--open');
+  });
+
+
   $('.header__btn').on('click', function () {
     $('.rightside-menu').removeClass('rightside-menu--close');
   });
