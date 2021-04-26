@@ -12,6 +12,17 @@
     align-items: center;
     height: 120px;
   }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__btn-menu{
+    display: none;
+  }
 }
 
 .logo {
@@ -20,11 +31,10 @@
 }
 
 .menu {
-  padding-left: 35px;
+  padding-right: 15px;
 
   &__list {
     display: flex;
-    justify-content: stretch;
   }
 
   &__list-item {
@@ -36,7 +46,6 @@
     @extend %title-font;
     color: rgba(54, 56, 56, 0.9033);
     line-height: 22;
-
   }
 
   &__list-link--active {
@@ -54,13 +63,6 @@
       background-color: rgba(#363838, .7);
     }
   }
-}
-
-.header__btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
 }
 
 //breadcrumbs
@@ -1484,3 +1486,4 @@
 
   }
 }
+@import 'media';
