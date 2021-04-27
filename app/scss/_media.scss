@@ -1,3 +1,14 @@
+@media (max-width: 990px) {
+  .footer {
+    &__info {
+      width: 380px;
+    }
+  }
+
+}
+
+
+
 @media (max-width: 768px) {
   .header__btn {
     display: none;
@@ -14,6 +25,34 @@
   .logo {
     margin: 0;
   }
+
+
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+    &__info {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__info-text {
+      max-width: 100%;
+    }
+
+    &__social {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__menu {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 @media (max-width: 540px) {
@@ -25,12 +64,12 @@
 
   .header {
     padding-top: 42px;
-    
-    &__inner{
+
+    &__inner {
       flex-wrap: wrap;
     }
 
-    &__btn-menu{
+    &__btn-menu {
       display: block;
       background-color: transparent;
       border: none;
@@ -38,7 +77,8 @@
       order: -1;
       position: relative;
       z-index: 12;
-      span{
+
+      span {
         background-color: #000;
         width: 37px;
         height: 3px;
@@ -49,7 +89,7 @@
     }
   }
 
-  .menu{
+  .menu {
     padding-right: 0;
     width: 100%;
     background-color: #fff;
@@ -58,23 +98,47 @@
     text-align: center;
     transform: translateY(-350px);
     transition: all .5s;
-    
+
     &--open {
       transform: translateY(30px);
     }
 
     &__list {
       display: block;
-      
+
     }
 
-    &__list-item{
+    &__list-item {
       padding-right: 0;
     }
 
-    &__list-link{
+    &__list-link {
       display: block;
       padding: 15px 0;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+
+  .footer {
+    &__inner {
+      justify-content: space-between;
+
+    }
+
+    &__form{
+      display: block;
+    }
+
+    &__form-button{
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+
+    &__social {
+      margin-left: 0;
     }
   }
 }
