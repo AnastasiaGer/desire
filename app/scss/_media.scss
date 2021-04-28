@@ -41,6 +41,14 @@
     padding: 6px 10px;
   }
 
+  .about__content{
+    padding: 40px 0;
+  }
+
+  .about__text{
+    padding-left: 0;
+  }
+
 }
 
 // 840px
@@ -146,6 +154,18 @@
 
   .works-path__item--measurements {
     margin-left: 100px;
+  }
+
+  .about__prev{
+    padding: 80px 0;
+  }
+
+  .inspiration__images{
+    display: none;
+  }
+
+  .partners__items{
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -301,6 +321,21 @@
   .blog-box__item-title{
     font-size: 24px;
     line-height: 26px;
+  }
+
+  .about__prep-title{
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .inspiration__item-title{
+    margin-right: 10px;
+  }
+
+  .inspiration__item-title,
+  .inspiration__item-num{
+    font-size: 16px;
+    line-height: 23px;
   }
 }
 
