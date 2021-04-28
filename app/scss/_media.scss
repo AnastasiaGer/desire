@@ -318,6 +318,11 @@
     grid-row: 1;
   }
 
+  .gallery.gallery-page .gallery__item:nth-child(8) {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
   .blog-box__item-title{
     font-size: 24px;
     line-height: 26px;
