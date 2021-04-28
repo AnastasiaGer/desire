@@ -43,7 +43,7 @@
     max-width: 100%;
   }
 
-  .blog__item-img{
+  .blog__item-img {
     width: 100%;
     max-width: 100%;
   }
@@ -398,9 +398,16 @@
   .recent__posts-title,
   .blog__category-title,
   .blog__item-title,
-  .blog__blockquote-author{
+  .blog__blockquote-author,
+  .blog-one__comment-name {
     font-size: 16px;
     line-height: 23px;
+  }
+
+  .blog-one__comments-title,
+  .blog-one__form-title{
+    font-size: 24px;
+    line-height: 26px;
   }
 }
 
@@ -425,5 +432,15 @@
     &__social {
       margin-left: 0;
     }
+  }
+
+  .blog-one__item {
+    blockquote {
+      padding: 0 20px;
+    }
+  }
+
+  .blog-one__links{
+    display: none;
   }
 }
